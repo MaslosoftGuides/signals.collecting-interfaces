@@ -7,7 +7,7 @@ use Maslosoft\Guides\Signals\Slots\NotifierSlot;
 use Maslosoft\Signals\Interfaces\SignalInterface;
 
 /**
- * @SlotFor(NotifierSlot)
+ * @SignalFor(NotifierSlot)
  * @see NotifierSlot
  */
 interface NotifierInterface extends AnnotatedInterface, SignalInterface

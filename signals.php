@@ -17,5 +17,3 @@ foreach($results as $notifier)
 {
 	$notifier->notify('Hello Signals!');
 }
-
-var_dump($results);

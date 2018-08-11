@@ -2,10 +2,14 @@
 
 namespace Maslosoft\Guides\Signals\Notifiers;
 
+use ReflectionClass;
+
 abstract class AbstractNotifier
 {
 	public function notify($message)
 	{
-		echo static::class . PHP_EOL . $message . PHP_EOL;
+		$name = (new ReflectionClass(static::class))->getShortName();
+		$name = str_pad(str_replace('Notifier', '', $name), 8);
+		echo $name . ": " . $message . PHP_EOL;
 	}
 }
