@@ -1,6 +1,6 @@
 {
     "require": {
-        "maslosoft/signals": "^2.0"
+        "maslosoft/signals": "^4"
     },
     "autoload": {
 	"psr-4": {
